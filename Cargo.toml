@@ -78,4 +78,8 @@ version = "0.1.0"
 debug = true
 
 [profile.release]
-debug = true
+opt-level = "z"
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = "symbols"
